@@ -17,6 +17,7 @@ myobjs/main.o: src/main.cpp /usr/include/stdc-predef.h \
  /usr/include/i386-linux-gnu/bits/nan.h \
  /usr/include/i386-linux-gnu/bits/mathdef.h \
  /usr/include/i386-linux-gnu/bits/mathcalls.h \
+ /usr/include/i386-linux-gnu/bits/mathinline.h \
  external/include/Box2D/Common/b2Timer.h \
  external/include/Box2D/Collision/Shapes/b2CircleShape.h \
  external/include/Box2D/Collision/Shapes/b2Shape.h \
@@ -36,6 +37,7 @@ myobjs/main.o: src/main.cpp /usr/include/stdc-predef.h \
  external/include/Box2D/Collision/b2DynamicTree.h \
  external/include/Box2D/Common/b2GrowableStack.h /usr/include/memory.h \
  /usr/include/string.h /usr/include/xlocale.h \
+ /usr/include/i386-linux-gnu/bits/string3.h \
  /usr/include/c++/4.8/algorithm /usr/include/c++/4.8/utility \
  /usr/include/i386-linux-gnu/c++/4.8/bits/c++config.h \
  /usr/include/i386-linux-gnu/c++/4.8/bits/os_defines.h \
@@ -66,9 +68,11 @@ myobjs/main.o: src/main.cpp /usr/include/stdc-predef.h \
  /usr/include/i386-linux-gnu/bits/select.h \
  /usr/include/i386-linux-gnu/bits/sigset.h \
  /usr/include/i386-linux-gnu/bits/time.h \
+ /usr/include/i386-linux-gnu/bits/select2.h \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
  /usr/include/i386-linux-gnu/bits/stdlib-float.h \
+ /usr/include/i386-linux-gnu/bits/stdlib.h \
  /usr/include/c++/4.8/bits/algorithmfwd.h \
  /usr/include/c++/4.8/bits/stl_heap.h \
  /usr/include/c++/4.8/bits/stl_tempbuf.h \
@@ -114,10 +118,12 @@ myobjs/main.o: src/main.cpp /usr/include/stdc-predef.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/i686-linux-gnu/4.8/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h \
- /usr/include/c++/4.8/cstring /usr/include/c++/4.8/string \
- /usr/include/c++/4.8/bits/stringfwd.h \
+ /usr/include/i386-linux-gnu/bits/stdio.h \
+ /usr/include/i386-linux-gnu/bits/stdio2.h /usr/include/c++/4.8/cstring \
+ /usr/include/c++/4.8/string /usr/include/c++/4.8/bits/stringfwd.h \
  /usr/include/c++/4.8/bits/char_traits.h \
  /usr/include/c++/4.8/bits/postypes.h /usr/include/c++/4.8/cwchar \
+ /usr/include/i386-linux-gnu/bits/wchar2.h \
  /usr/include/c++/4.8/bits/localefwd.h \
  /usr/include/i386-linux-gnu/c++/4.8/bits/c++locale.h \
  /usr/include/c++/4.8/clocale /usr/include/locale.h \

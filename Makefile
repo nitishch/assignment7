@@ -34,7 +34,7 @@ NewLI = -lCS296test -lBox2D -lglui -lglut -lGLU -lGL
 
 
 #CPPFLAGS =-g -O3 -Wall -fno-strict-aliasing this is the original line
-CPPFLAGS =-g -Wall -fno-strict-aliasing -p
+CPPFLAGS =-g -Wall -fno-strict-aliasing -p -O3
 CPPFLAGS+=-I $(BOX2D_ROOT)/include -I $(GLUI_ROOT)/include
 LDFLAGS+=-L $(BOX2D_ROOT)/lib -L $(GLUI_ROOT)/lib
 NewLD+=-L $(PROJECT_ROOT)mylibs -L $(BOX2D_ROOT)/lib -L $(GLUI_ROOT)/lib

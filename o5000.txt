@@ -1,0 +1,210 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ns/call  ns/call  name    
+ 54.55      0.06     0.06                             b2ContactSolver::SolveVelocityConstraints()
+ 18.18      0.08     0.02    65000   307.69   307.69  debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&)
+  9.09      0.09     0.01                             b2DynamicTree::MoveProxy(int, b2AABB const&, b2Vec2 const&)
+  9.09      0.10     0.01                             b2World::Step(float, int, int)
+  9.09      0.11     0.01                             b2World::Solve(b2TimeStep const&)
+  0.00      0.11     0.00   140000     0.00     0.00  debug_draw_t::DrawSolidPolygon(b2Vec2 const*, int, b2Color const&)
+  0.00      0.11     0.00   108689     0.00     0.00  b2ContactListener::PostSolve(b2Contact*, b2ContactImpulse const*)
+  0.00      0.11     0.00   108670     0.00     0.00  b2ContactListener::PreSolve(b2Contact*, b2Manifold const*)
+  0.00      0.11     0.00    70000     0.00     0.00  debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&)
+  0.00      0.11     0.00      437     0.00     0.00  b2ContactListener::BeginContact(b2Contact*)
+  0.00      0.11     0.00      390     0.00     0.00  b2ContactListener::EndContact(b2Contact*)
+  0.00      0.11     0.00        2     0.00     0.00  _init
+  0.00      0.11     0.00        1     0.00     0.00  cs296::base_sim_t::base_sim_t()
+  0.00      0.11     0.00        1     0.00     0.00  cs296::dominos_t::dominos_t()
+  0.00      0.11     0.00        1     0.00     0.00  main
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 9.09% of 0.11 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     54.5    0.06    0.00                 b2ContactSolver::SolveVelocityConstraints() [1]
+-----------------------------------------------
+                0.02    0.00   65000/65000       b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&) [3]
+[2]     18.2    0.02    0.00   65000         debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&) [2]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]     18.2    0.00    0.02                 b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&) [3]
+                0.02    0.00   65000/65000       debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&) [2]
+                0.00    0.00  140000/140000      debug_draw_t::DrawSolidPolygon(b2Vec2 const*, int, b2Color const&) [14]
+                0.00    0.00    5000/70000       debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&) [17]
+-----------------------------------------------
+                                                 <spontaneous>
+[4]      9.1    0.01    0.00                 b2DynamicTree::MoveProxy(int, b2AABB const&, b2Vec2 const&) [4]
+-----------------------------------------------
+                                                 <spontaneous>
+[5]      9.1    0.01    0.00                 b2World::Step(float, int, int) [5]
+-----------------------------------------------
+                                                 <spontaneous>
+[6]      9.1    0.01    0.00                 b2World::Solve(b2TimeStep const&) [6]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [515]
+[7]      0.0    0.00    0.00       1         main [7]
+-----------------------------------------------
+                0.00    0.00  140000/140000      b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&) [3]
+[14]     0.0    0.00    0.00  140000         debug_draw_t::DrawSolidPolygon(b2Vec2 const*, int, b2Color const&) [14]
+-----------------------------------------------
+                0.00    0.00     234/108689      b2Island::SolveTOI(b2TimeStep const&, int, int) [348]
+                0.00    0.00  108455/108689      b2Island::Solve(b2Profile*, b2TimeStep const&, b2Vec2 const&, bool) [346]
+[15]     0.0    0.00    0.00  108689         b2ContactListener::PostSolve(b2Contact*, b2ContactImpulse const*) [15]
+-----------------------------------------------
+                0.00    0.00  108670/108670      b2Contact::Update(b2ContactListener*) [353]
+[16]     0.0    0.00    0.00  108670         b2ContactListener::PreSolve(b2Contact*, b2Manifold const*) [16]
+-----------------------------------------------
+                0.00    0.00    5000/70000       b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&) [3]
+                0.00    0.00   65000/70000       b2World::DrawJoint(b2Joint*) [343]
+[17]     0.0    0.00    0.00   70000         debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&) [17]
+-----------------------------------------------
+                0.00    0.00     437/437         b2Contact::Update(b2ContactListener*) [353]
+[18]     0.0    0.00    0.00     437         b2ContactListener::BeginContact(b2Contact*) [18]
+-----------------------------------------------
+                0.00    0.00     390/390         b2Contact::Update(b2ContactListener*) [353]
+[19]     0.0    0.00    0.00     390         b2ContactListener::EndContact(b2Contact*) [19]
+-----------------------------------------------
+                0.00    0.00       2/2           __libc_csu_init [515]
+[20]     0.0    0.00    0.00       2         _init [20]
+-----------------------------------------------
+                0.00    0.00       1/1           cs296::dominos_t::dominos_t() [22]
+[21]     0.0    0.00    0.00       1         cs296::base_sim_t::base_sim_t() [21]
+-----------------------------------------------
+                0.00    0.00       1/1           cs296::dominos_t::create() [296]
+[22]     0.0    0.00    0.00       1         cs296::dominos_t::dominos_t() [22]
+                0.00    0.00       1/1           cs296::base_sim_t::base_sim_t() [21]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [17] debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&) [19] b2ContactListener::EndContact(b2Contact*) [22] cs296::dominos_t::dominos_t()
+   [2] debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&) [18] b2ContactListener::BeginContact(b2Contact*) [5] b2World::Step(float, int, int)
+  [14] debug_draw_t::DrawSolidPolygon(b2Vec2 const*, int, b2Color const&) [16] b2ContactListener::PreSolve(b2Contact*, b2Manifold const*) [6] b2World::Solve(b2TimeStep const&)
+   [4] b2DynamicTree::MoveProxy(int, b2AABB const&, b2Vec2 const&) [15] b2ContactListener::PostSolve(b2Contact*, b2ContactImpulse const*) [20] _init
+   [1] b2ContactSolver::SolveVelocityConstraints() [21] cs296::base_sim_t::base_sim_t() [7] main
