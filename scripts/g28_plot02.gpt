@@ -1,0 +1,12 @@
+set datafile separator ","
+set term png
+set output "../plots/g28_plot02.png"
+set offset 0.5,0.5,0.5,0.5
+set autoscale
+set xlabel "iteration value"
+set ylabel "time(ms)"
+set title 'Plot2'
+plot '../data/average.csv' using 1:2 with linespoints title 'step time',\
+'../data/average.csv' u 1:3 with linespoints title 'collision time',\
+'../data/average.csv' u 1:4 with linespoints title 'velocity time',\
+'../data/average.csv' u 1:5 with linespoints title 'position time', '../data/average.csv' u 1:($3+$4+$5) with linespoints title 'sum of times'

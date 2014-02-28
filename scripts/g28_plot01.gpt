@@ -1,0 +1,33 @@
+
+
+set datafile separator ","
+#have to change the linespoints/steptimes coloumn no
+plot '../data/average.csv' using 1:2 
+
+
+
+min_y = GPVAL_DATA_Y_MIN
+max_y = GPVAL_DATA_Y_MAX
+max_x = GPVAL_DATA_X_MAX
+
+set term png
+set output "../plots/g28_plot01.png"
+set title "Plot1"
+set boxwidth 0.5 relative
+set style fill solid 1.0
+set autoscale
+set xlabel "iteration_value"
+set ylabel "time(ms)"
+set offset 0.5,0.5,0.5,0.5
+
+set datafile separator ","
+set label 1 gprintf("Minimum = %g", min_y) at max_x, min_y
+set label 2 gprintf("Maximum = %g", max_y) at max_x, max_y
+
+plot '../data/average.csv' using 1:2 title "Steptime" with boxes, \
+ '../data/average.csv' u 1:6 t 'Looptime' w linespoints,\
+  max_y w l lt 3 notitle,\
+  min_y w l lt 3 notitle
+
+
+

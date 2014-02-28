@@ -1,0 +1,17 @@
+set datafile separator ","
+set term png
+set output "../plots/g28_plot05.png"
+set offset 0.5,0.5,0.5,0.5
+set xlabel "Iteration"
+set ylabel "Step time(ms)"
+set title "Plot5"
+set autoscale
+#plot "../data/average4andrandom.csv" u 1:3 t "Random Step Time" w points, '' u 1:2 t "Step Time" w points
+f(x) = a*x + b
+g(x) = c*x + d
+fit f(x) "../data/average4andrandom.csv" u 1:3 via a,b
+#plot f(x) t 'Best Fit for random'
+fit g(x) '../data/average4andrandom.csv' u 1:2 via c,d
+#plot g(x) t 'Best Fit for data02'
+plot '../data/average4andrandom.csv' using 1:3 title 'Random Step Time' with points, f(x) title 'Best Fit for random',\
+'../data/average4andrandom.csv' using 1:2 title 'data02 Step Time' with points, g(x) title 'Best Fit for data02'

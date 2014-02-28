@@ -1,0 +1,19 @@
+set datafile separator ","
+plot'../data/highest.csv' using 2:3
+min_y=GPVAL_DATA_Y_MIN
+max_y=GPVAL_DATA_Y_MAX
+bin_width = (max_y-min_y)/10;
+set boxwidth 0.5 relative
+bin_number(x) = floor(x/bin_width)
+rounded(x) = bin_width * ( bin_number(x)+0.5)
+set term png
+set output "../plots/g28_plot04.png"
+set offset 0,0,0.5,0.5
+set xlabel "Step Time"
+set ylabel "Frequency"
+set title "plot4"
+set autoscale
+set style fill solid 1.0 noborder
+plot '../data/highest.csv' u (rounded($3)):(1) t "cumulative frequency plot" smooth cumulative with lines,\
+'../data/highest.csv' u (rounded($3)):(1) t "frequency plot" smooth frequency with boxes
+

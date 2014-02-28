@@ -1,0 +1,9 @@
+set datafile separator ","
+set term png
+set output "../plots/g28_plot03.png"
+set offset 0.5,0.5,0.5,0.5
+set xlabel "iteration value"
+set ylabel "step time(ms)"
+set title "Plot3"
+set autoscale
+plot '../data/average.csv' u 1:2:7 w errorb t 'error bars', '' u 1:2 w linespoints t 'step time'
