@@ -34,7 +34,7 @@ NewLI = -lCS296test -lBox2D -lglui -lglut -lGLU -lGL
 
 
 #CPPFLAGS =-g -O3 -Wall -fno-strict-aliasing this is the original line
-CPPFLAGS =-g -Wall -fno-strict-aliasing -p -O3
+CPPFLAGS =-g -Wall -fno-strict-aliasing -p
 CPPFLAGS+=-I $(BOX2D_ROOT)/include -I $(GLUI_ROOT)/include
 LDFLAGS+=-L $(BOX2D_ROOT)/lib -L $(GLUI_ROOT)/lib
 NewLD+=-L $(PROJECT_ROOT)mylibs -L $(BOX2D_ROOT)/lib -L $(GLUI_ROOT)/lib
@@ -116,7 +116,7 @@ setup:
 	@$(ECHO) $(PROJECT_ROOT)
 	@if [ -f $(PROJECT_ROOT)external/include/Box2D/Box2D.h ] && [ -f $(PROJECT_ROOT)external/lib/Box2D/Box2D.h ];\
 	then $(ECHO) -n "Done...";\
-	else cd $(PROJECT_ROOT)external/src; tar xzf ./Box2D.tgz; cd Box2D; mkdir build296;cd build296; cmake -DCMAKE_BUILD_TYPE=Release ../;make; make install;\
+	else cd $(PROJECT_ROOT)external/src; tar xzf ./Box2D.tgz; cd Box2D; mkdir build296;cd build296; cmake -DCMAKE_BUILD_TYPE=Debug ../;make; make install;\
 	cd $(PROJECT_ROOT);\
 	fi;
 clean:
