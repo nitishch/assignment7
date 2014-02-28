@@ -5,36 +5,35 @@ Each sample counts as 0.01 seconds.
 
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
-  0.00      0.00     0.00   127414     0.00     0.00  b2Vec2::b2Vec2(float, float)
-  0.00      0.00     0.00    42900     0.00     0.00  operator*(float, b2Vec2 const&)
-  0.00      0.00     0.00    42900     0.00     0.00  operator+(b2Vec2 const&, b2Vec2 const&)
+  0.00      0.00     0.00     6384     0.00     0.00  b2Vec2::b2Vec2(float, float)
   0.00      0.00     0.00     4679     0.00     0.00  b2Vec2::b2Vec2()
-  0.00      0.00     0.00     2800     0.00     0.00  debug_draw_t::DrawSolidPolygon(b2Vec2 const*, int, b2Color const&)
+  0.00      0.00     0.00     2145     0.00     0.00  operator*(float, b2Vec2 const&)
+  0.00      0.00     0.00     2145     0.00     0.00  operator+(b2Vec2 const&, b2Vec2 const&)
   0.00      0.00     0.00     2048     0.00     0.00  cs296::contact_point_t::contact_point_t()
-  0.00      0.00     0.00     1400     0.00     0.00  debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&)
-  0.00      0.00     0.00     1300     0.00     0.00  debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&)
-  0.00      0.00     0.00     1262     0.00     0.00  b2ContactListener::PostSolve(b2Contact*, b2ContactImpulse const*)
-  0.00      0.00     0.00     1260     0.00     0.00  b2ContactListener::PreSolve(b2Contact*, b2Manifold const*)
-  0.00      0.00     0.00      800     0.00     0.00  float b2Max<float>(float, float)
-  0.00      0.00     0.00      500     0.00     0.00  b2World::GetProfile() const
-  0.00      0.00     0.00      400     0.00     0.00  cs296::base_sim_t::get_world()
+  0.00      0.00     0.00      204     0.00     0.00  b2ContactListener::PreSolve(b2Contact*, b2Manifold const*)
+  0.00      0.00     0.00      204     0.00     0.00  b2ContactListener::PostSolve(b2Contact*, b2ContactImpulse const*)
+  0.00      0.00     0.00      140     0.00     0.00  debug_draw_t::DrawSolidPolygon(b2Vec2 const*, int, b2Color const&)
   0.00      0.00     0.00      136     0.00     0.00  b2Vec2::Set(float, float)
-  0.00      0.00     0.00      100     0.00     0.00  cs296::base_sim_t::step(cs296::settings_t*)
-  0.00      0.00     0.00      100     0.00     0.00  b2World::SetSubStepping(bool)
-  0.00      0.00     0.00      100     0.00     0.00  b2World::SetWarmStarting(bool)
-  0.00      0.00     0.00      100     0.00     0.00  b2World::SetContinuousPhysics(bool)
-  0.00      0.00     0.00       41     0.00     0.00  b2ContactListener::BeginContact(b2Contact*)
+  0.00      0.00     0.00       70     0.00     0.00  debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&)
+  0.00      0.00     0.00       65     0.00     0.00  debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&)
+  0.00      0.00     0.00       40     0.00     0.00  float b2Max<float>(float, float)
   0.00      0.00     0.00       39     0.00     0.00  b2BodyDef::b2BodyDef()
+  0.00      0.00     0.00       36     0.00     0.00  b2ContactListener::BeginContact(b2Contact*)
   0.00      0.00     0.00       33     0.00     0.00  b2Shape::b2Shape()
   0.00      0.00     0.00       32     0.00     0.00  b2Vec2::SetZero()
   0.00      0.00     0.00       28     0.00     0.00  b2PolygonShape::b2PolygonShape()
+  0.00      0.00     0.00       25     0.00     0.00  b2World::GetProfile() const
   0.00      0.00     0.00       24     0.00     0.00  b2Shape::~b2Shape()
+  0.00      0.00     0.00       20     0.00     0.00  cs296::base_sim_t::get_world()
   0.00      0.00     0.00       19     0.00     0.00  b2PolygonShape::~b2PolygonShape()
   0.00      0.00     0.00       16     0.00     0.00  b2FixtureDef::b2FixtureDef()
   0.00      0.00     0.00       16     0.00     0.00  b2Filter::b2Filter()
   0.00      0.00     0.00        8     0.00     0.00  std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
-  0.00      0.00     0.00        7     0.00     0.00  b2ContactListener::EndContact(b2Contact*)
   0.00      0.00     0.00        5     0.00     0.00  b2JointDef::b2JointDef()
+  0.00      0.00     0.00        5     0.00     0.00  cs296::base_sim_t::step(cs296::settings_t*)
+  0.00      0.00     0.00        5     0.00     0.00  b2World::SetSubStepping(bool)
+  0.00      0.00     0.00        5     0.00     0.00  b2World::SetWarmStarting(bool)
+  0.00      0.00     0.00        5     0.00     0.00  b2World::SetContinuousPhysics(bool)
   0.00      0.00     0.00        4     0.00     0.00  b2CircleShape::b2CircleShape()
   0.00      0.00     0.00        4     0.00     0.00  b2CircleShape::~b2CircleShape()
   0.00      0.00     0.00        4     0.00     0.00  b2Body::GetWorldCenter() const
@@ -43,6 +42,7 @@ Each sample counts as 0.01 seconds.
   0.00      0.00     0.00        4     0.00     0.00  std::operator~(std::_Ios_Fmtflags)
   0.00      0.00     0.00        4     0.00     0.00  std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
   0.00      0.00     0.00        4     0.00     0.00  std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  0.00      0.00     0.00        3     0.00     0.00  b2ContactListener::EndContact(b2Contact*)
   0.00      0.00     0.00        3     0.00     0.00  b2RevoluteJointDef::b2RevoluteJointDef()
   0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
   0.00      0.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
@@ -100,191 +100,191 @@ notice and this notice are preserved.
 granularity: each sample hit covers 4 byte(s) no time propagated
 
 index % time    self  children    called     name
-                0.00    0.00       1/127414      cs296::settings_t::settings_t() [57]
-                0.00    0.00      13/127414      cs296::dominos_t::dominos_t() [60]
-                0.00    0.00   41600/127414      debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&) [15]
-                0.00    0.00   42900/127414      operator+(b2Vec2 const&, b2Vec2 const&) [10]
-                0.00    0.00   42900/127414      operator*(float, b2Vec2 const&) [9]
-[8]      0.0    0.00    0.00  127414         b2Vec2::b2Vec2(float, float) [8]
------------------------------------------------
-                0.00    0.00   42900/42900       debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&) [15]
-[9]      0.0    0.00    0.00   42900         operator*(float, b2Vec2 const&) [9]
-                0.00    0.00   42900/127414      b2Vec2::b2Vec2(float, float) [8]
------------------------------------------------
-                0.00    0.00   42900/42900       debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&) [15]
-[10]     0.0    0.00    0.00   42900         operator+(b2Vec2 const&, b2Vec2 const&) [10]
-                0.00    0.00   42900/127414      b2Vec2::b2Vec2(float, float) [8]
+                0.00    0.00       1/6384        cs296::settings_t::settings_t() [57]
+                0.00    0.00      13/6384        cs296::dominos_t::dominos_t() [60]
+                0.00    0.00    2080/6384        debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&) [18]
+                0.00    0.00    2145/6384        operator+(b2Vec2 const&, b2Vec2 const&) [11]
+                0.00    0.00    2145/6384        operator*(float, b2Vec2 const&) [10]
+[8]      0.0    0.00    0.00    6384         b2Vec2::b2Vec2(float, float) [8]
 -----------------------------------------------
                 0.00    0.00       1/4679        __static_initialization_and_destruction_0(int, int) [47]
                 0.00    0.00       1/4679        cs296::base_sim_t::base_sim_t() [56]
                 0.00    0.00       2/4679        b2AABB::b2AABB() [61]
                 0.00    0.00       2/4679        b2DistanceJointDef::b2DistanceJointDef() [55]
-                0.00    0.00       4/4679        b2CircleShape::b2CircleShape() [38]
+                0.00    0.00       4/4679        b2CircleShape::b2CircleShape() [37]
                 0.00    0.00       4/4679        b2EdgeShape::b2EdgeShape() [50]
                 0.00    0.00       4/4679        b2PulleyJointDef::b2PulleyJointDef() [53]
                 0.00    0.00       5/4679        cs296::dominos_t::dominos_t() [60]
                 0.00    0.00       6/4679        b2RevoluteJointDef::b2RevoluteJointDef() [46]
-                0.00    0.00      78/4679        b2BodyDef::b2BodyDef() [27]
-                0.00    0.00     476/4679        b2PolygonShape::b2PolygonShape() [30]
-                0.00    0.00    4096/4679        cs296::contact_point_t::contact_point_t() [13]
-[11]     0.0    0.00    0.00    4679         b2Vec2::b2Vec2() [11]
+                0.00    0.00      78/4679        b2BodyDef::b2BodyDef() [20]
+                0.00    0.00     476/4679        b2PolygonShape::b2PolygonShape() [24]
+                0.00    0.00    4096/4679        cs296::contact_point_t::contact_point_t() [12]
+[9]      0.0    0.00    0.00    4679         b2Vec2::b2Vec2() [9]
 -----------------------------------------------
-                0.00    0.00    2800/2800        b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&) [391]
-[12]     0.0    0.00    0.00    2800         debug_draw_t::DrawSolidPolygon(b2Vec2 const*, int, b2Color const&) [12]
+                0.00    0.00    2145/2145        debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&) [18]
+[10]     0.0    0.00    0.00    2145         operator*(float, b2Vec2 const&) [10]
+                0.00    0.00    2145/6384        b2Vec2::b2Vec2(float, float) [8]
+-----------------------------------------------
+                0.00    0.00    2145/2145        debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&) [18]
+[11]     0.0    0.00    0.00    2145         operator+(b2Vec2 const&, b2Vec2 const&) [11]
+                0.00    0.00    2145/6384        b2Vec2::b2Vec2(float, float) [8]
 -----------------------------------------------
                 0.00    0.00    2048/2048        cs296::base_sim_t::base_sim_t() [56]
-[13]     0.0    0.00    0.00    2048         cs296::contact_point_t::contact_point_t() [13]
-                0.00    0.00    4096/4679        b2Vec2::b2Vec2() [11]
+[12]     0.0    0.00    0.00    2048         cs296::contact_point_t::contact_point_t() [12]
+                0.00    0.00    4096/4679        b2Vec2::b2Vec2() [9]
 -----------------------------------------------
-                0.00    0.00     100/1400        b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&) [391]
-                0.00    0.00    1300/1400        b2World::DrawJoint(b2Joint*) [390]
-[14]     0.0    0.00    0.00    1400         debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&) [14]
+                0.00    0.00     204/204         b2Contact::Update(b2ContactListener*) [404]
+[13]     0.0    0.00    0.00     204         b2ContactListener::PreSolve(b2Contact*, b2Manifold const*) [13]
 -----------------------------------------------
-                0.00    0.00    1300/1300        b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&) [391]
-[15]     0.0    0.00    0.00    1300         debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&) [15]
-                0.00    0.00   42900/42900       operator*(float, b2Vec2 const&) [9]
-                0.00    0.00   42900/42900       operator+(b2Vec2 const&, b2Vec2 const&) [10]
-                0.00    0.00   41600/127414      b2Vec2::b2Vec2(float, float) [8]
+                0.00    0.00      33/204         b2Island::SolveTOI(b2TimeStep const&, int, int) [396]
+                0.00    0.00     171/204         b2Island::Solve(b2Profile*, b2TimeStep const&, b2Vec2 const&, bool) [394]
+[14]     0.0    0.00    0.00     204         b2ContactListener::PostSolve(b2Contact*, b2ContactImpulse const*) [14]
 -----------------------------------------------
-                0.00    0.00      59/1262        b2Island::SolveTOI(b2TimeStep const&, int, int) [396]
-                0.00    0.00    1203/1262        b2Island::Solve(b2Profile*, b2TimeStep const&, b2Vec2 const&, bool) [394]
-[16]     0.0    0.00    0.00    1262         b2ContactListener::PostSolve(b2Contact*, b2ContactImpulse const*) [16]
------------------------------------------------
-                0.00    0.00    1260/1260        b2Contact::Update(b2ContactListener*) [404]
-[17]     0.0    0.00    0.00    1260         b2ContactListener::PreSolve(b2Contact*, b2Manifold const*) [17]
------------------------------------------------
-                0.00    0.00     800/800         cs296::base_sim_t::step(cs296::settings_t*) [22]
-[18]     0.0    0.00    0.00     800         float b2Max<float>(float, float) [18]
------------------------------------------------
-                0.00    0.00     100/500         cs296::base_sim_t::step(cs296::settings_t*) [22]
-                0.00    0.00     400/500         main [6]
-[19]     0.0    0.00    0.00     500         b2World::GetProfile() const [19]
------------------------------------------------
-                0.00    0.00     400/400         main [6]
-[20]     0.0    0.00    0.00     400         cs296::base_sim_t::get_world() [20]
+                0.00    0.00     140/140         b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&) [391]
+[15]     0.0    0.00    0.00     140         debug_draw_t::DrawSolidPolygon(b2Vec2 const*, int, b2Color const&) [15]
 -----------------------------------------------
                 0.00    0.00       1/136         cs296::base_sim_t::base_sim_t() [56]
                 0.00    0.00       2/136         b2DistanceJointDef::b2DistanceJointDef() [55]
                 0.00    0.00       4/136         b2PulleyJointDef::b2PulleyJointDef() [53]
                 0.00    0.00       6/136         b2RevoluteJointDef::b2RevoluteJointDef() [46]
                 0.00    0.00      45/136         cs296::dominos_t::dominos_t() [60]
-                0.00    0.00      78/136         b2BodyDef::b2BodyDef() [27]
-[21]     0.0    0.00    0.00     136         b2Vec2::Set(float, float) [21]
+                0.00    0.00      78/136         b2BodyDef::b2BodyDef() [20]
+[16]     0.0    0.00    0.00     136         b2Vec2::Set(float, float) [16]
 -----------------------------------------------
-                0.00    0.00     100/100         main [6]
-[22]     0.0    0.00    0.00     100         cs296::base_sim_t::step(cs296::settings_t*) [22]
-                0.00    0.00     800/800         float b2Max<float>(float, float) [18]
-                0.00    0.00     100/100         b2World::SetWarmStarting(bool) [24]
-                0.00    0.00     100/100         b2World::SetContinuousPhysics(bool) [25]
-                0.00    0.00     100/100         b2World::SetSubStepping(bool) [23]
-                0.00    0.00     100/500         b2World::GetProfile() const [19]
+                0.00    0.00       5/70          b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&) [391]
+                0.00    0.00      65/70          b2World::DrawJoint(b2Joint*) [390]
+[17]     0.0    0.00    0.00      70         debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&) [17]
 -----------------------------------------------
-                0.00    0.00     100/100         cs296::base_sim_t::step(cs296::settings_t*) [22]
-[23]     0.0    0.00    0.00     100         b2World::SetSubStepping(bool) [23]
+                0.00    0.00      65/65          b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&) [391]
+[18]     0.0    0.00    0.00      65         debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&) [18]
+                0.00    0.00    2145/2145        operator*(float, b2Vec2 const&) [10]
+                0.00    0.00    2145/2145        operator+(b2Vec2 const&, b2Vec2 const&) [11]
+                0.00    0.00    2080/6384        b2Vec2::b2Vec2(float, float) [8]
 -----------------------------------------------
-                0.00    0.00     100/100         cs296::base_sim_t::step(cs296::settings_t*) [22]
-[24]     0.0    0.00    0.00     100         b2World::SetWarmStarting(bool) [24]
------------------------------------------------
-                0.00    0.00     100/100         cs296::base_sim_t::step(cs296::settings_t*) [22]
-[25]     0.0    0.00    0.00     100         b2World::SetContinuousPhysics(bool) [25]
------------------------------------------------
-                0.00    0.00      41/41          b2Contact::Update(b2ContactListener*) [404]
-[26]     0.0    0.00    0.00      41         b2ContactListener::BeginContact(b2Contact*) [26]
+                0.00    0.00      40/40          cs296::base_sim_t::step(cs296::settings_t*) [33]
+[19]     0.0    0.00    0.00      40         float b2Max<float>(float, float) [19]
 -----------------------------------------------
                 0.00    0.00       1/39          cs296::base_sim_t::base_sim_t() [56]
                 0.00    0.00      38/39          cs296::dominos_t::dominos_t() [60]
-[27]     0.0    0.00    0.00      39         b2BodyDef::b2BodyDef() [27]
-                0.00    0.00      78/4679        b2Vec2::b2Vec2() [11]
-                0.00    0.00      78/136         b2Vec2::Set(float, float) [21]
+[20]     0.0    0.00    0.00      39         b2BodyDef::b2BodyDef() [20]
+                0.00    0.00      78/4679        b2Vec2::b2Vec2() [9]
+                0.00    0.00      78/136         b2Vec2::Set(float, float) [16]
+-----------------------------------------------
+                0.00    0.00      36/36          b2Contact::Update(b2ContactListener*) [404]
+[21]     0.0    0.00    0.00      36         b2ContactListener::BeginContact(b2Contact*) [21]
 -----------------------------------------------
                 0.00    0.00       1/33          b2EdgeShape::b2EdgeShape() [50]
-                0.00    0.00       4/33          b2CircleShape::b2CircleShape() [38]
-                0.00    0.00      28/33          b2PolygonShape::b2PolygonShape() [30]
-[28]     0.0    0.00    0.00      33         b2Shape::b2Shape() [28]
+                0.00    0.00       4/33          b2CircleShape::b2CircleShape() [37]
+                0.00    0.00      28/33          b2PolygonShape::b2PolygonShape() [24]
+[22]     0.0    0.00    0.00      33         b2Shape::b2Shape() [22]
 -----------------------------------------------
-                0.00    0.00       4/32          b2CircleShape::b2CircleShape() [38]
-                0.00    0.00      28/32          b2PolygonShape::b2PolygonShape() [30]
-[29]     0.0    0.00    0.00      32         b2Vec2::SetZero() [29]
+                0.00    0.00       4/32          b2CircleShape::b2CircleShape() [37]
+                0.00    0.00      28/32          b2PolygonShape::b2PolygonShape() [24]
+[23]     0.0    0.00    0.00      32         b2Vec2::SetZero() [23]
 -----------------------------------------------
                 0.00    0.00      28/28          cs296::dominos_t::dominos_t() [60]
-[30]     0.0    0.00    0.00      28         b2PolygonShape::b2PolygonShape() [30]
-                0.00    0.00     476/4679        b2Vec2::b2Vec2() [11]
-                0.00    0.00      28/33          b2Shape::b2Shape() [28]
-                0.00    0.00      28/32          b2Vec2::SetZero() [29]
+[24]     0.0    0.00    0.00      28         b2PolygonShape::b2PolygonShape() [24]
+                0.00    0.00     476/4679        b2Vec2::b2Vec2() [9]
+                0.00    0.00      28/33          b2Shape::b2Shape() [22]
+                0.00    0.00      28/32          b2Vec2::SetZero() [23]
+-----------------------------------------------
+                0.00    0.00       5/25          cs296::base_sim_t::step(cs296::settings_t*) [33]
+                0.00    0.00      20/25          main [6]
+[25]     0.0    0.00    0.00      25         b2World::GetProfile() const [25]
 -----------------------------------------------
                 0.00    0.00       1/24          b2EdgeShape::~b2EdgeShape() [51]
-                0.00    0.00       4/24          b2CircleShape::~b2CircleShape() [39]
-                0.00    0.00      19/24          b2PolygonShape::~b2PolygonShape() [32]
-[31]     0.0    0.00    0.00      24         b2Shape::~b2Shape() [31]
+                0.00    0.00       4/24          b2CircleShape::~b2CircleShape() [38]
+                0.00    0.00      19/24          b2PolygonShape::~b2PolygonShape() [28]
+[26]     0.0    0.00    0.00      24         b2Shape::~b2Shape() [26]
+-----------------------------------------------
+                0.00    0.00      20/20          main [6]
+[27]     0.0    0.00    0.00      20         cs296::base_sim_t::get_world() [27]
 -----------------------------------------------
                 0.00    0.00      19/19          cs296::dominos_t::dominos_t() [60]
-[32]     0.0    0.00    0.00      19         b2PolygonShape::~b2PolygonShape() [32]
-                0.00    0.00      19/24          b2Shape::~b2Shape() [31]
+[28]     0.0    0.00    0.00      19         b2PolygonShape::~b2PolygonShape() [28]
+                0.00    0.00      19/24          b2Shape::~b2Shape() [26]
 -----------------------------------------------
                 0.00    0.00      16/16          cs296::dominos_t::dominos_t() [60]
-[33]     0.0    0.00    0.00      16         b2FixtureDef::b2FixtureDef() [33]
-                0.00    0.00      16/16          b2Filter::b2Filter() [34]
+[29]     0.0    0.00    0.00      16         b2FixtureDef::b2FixtureDef() [29]
+                0.00    0.00      16/16          b2Filter::b2Filter() [30]
 -----------------------------------------------
-                0.00    0.00      16/16          b2FixtureDef::b2FixtureDef() [33]
-[34]     0.0    0.00    0.00      16         b2Filter::b2Filter() [34]
+                0.00    0.00      16/16          b2FixtureDef::b2FixtureDef() [29]
+[30]     0.0    0.00    0.00      16         b2Filter::b2Filter() [30]
 -----------------------------------------------
-                0.00    0.00       4/8           std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [42]
-                0.00    0.00       4/8           std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [41]
-[35]     0.0    0.00    0.00       8         std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [35]
------------------------------------------------
-                0.00    0.00       7/7           b2Contact::Update(b2ContactListener*) [404]
-[36]     0.0    0.00    0.00       7         b2ContactListener::EndContact(b2Contact*) [36]
+                0.00    0.00       4/8           std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [41]
+                0.00    0.00       4/8           std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [40]
+[31]     0.0    0.00    0.00       8         std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [31]
 -----------------------------------------------
                 0.00    0.00       1/5           b2DistanceJointDef::b2DistanceJointDef() [55]
                 0.00    0.00       1/5           b2PulleyJointDef::b2PulleyJointDef() [53]
                 0.00    0.00       3/5           b2RevoluteJointDef::b2RevoluteJointDef() [46]
-[37]     0.0    0.00    0.00       5         b2JointDef::b2JointDef() [37]
+[32]     0.0    0.00    0.00       5         b2JointDef::b2JointDef() [32]
+-----------------------------------------------
+                0.00    0.00       5/5           main [6]
+[33]     0.0    0.00    0.00       5         cs296::base_sim_t::step(cs296::settings_t*) [33]
+                0.00    0.00      40/40          float b2Max<float>(float, float) [19]
+                0.00    0.00       5/5           b2World::SetWarmStarting(bool) [35]
+                0.00    0.00       5/5           b2World::SetContinuousPhysics(bool) [36]
+                0.00    0.00       5/5           b2World::SetSubStepping(bool) [34]
+                0.00    0.00       5/25          b2World::GetProfile() const [25]
+-----------------------------------------------
+                0.00    0.00       5/5           cs296::base_sim_t::step(cs296::settings_t*) [33]
+[34]     0.0    0.00    0.00       5         b2World::SetSubStepping(bool) [34]
+-----------------------------------------------
+                0.00    0.00       5/5           cs296::base_sim_t::step(cs296::settings_t*) [33]
+[35]     0.0    0.00    0.00       5         b2World::SetWarmStarting(bool) [35]
+-----------------------------------------------
+                0.00    0.00       5/5           cs296::base_sim_t::step(cs296::settings_t*) [33]
+[36]     0.0    0.00    0.00       5         b2World::SetContinuousPhysics(bool) [36]
 -----------------------------------------------
                 0.00    0.00       4/4           cs296::dominos_t::dominos_t() [60]
-[38]     0.0    0.00    0.00       4         b2CircleShape::b2CircleShape() [38]
-                0.00    0.00       4/33          b2Shape::b2Shape() [28]
-                0.00    0.00       4/4679        b2Vec2::b2Vec2() [11]
-                0.00    0.00       4/32          b2Vec2::SetZero() [29]
+[37]     0.0    0.00    0.00       4         b2CircleShape::b2CircleShape() [37]
+                0.00    0.00       4/33          b2Shape::b2Shape() [22]
+                0.00    0.00       4/4679        b2Vec2::b2Vec2() [9]
+                0.00    0.00       4/32          b2Vec2::SetZero() [23]
 -----------------------------------------------
                 0.00    0.00       4/4           cs296::dominos_t::dominos_t() [60]
-[39]     0.0    0.00    0.00       4         b2CircleShape::~b2CircleShape() [39]
-                0.00    0.00       4/24          b2Shape::~b2Shape() [31]
+[38]     0.0    0.00    0.00       4         b2CircleShape::~b2CircleShape() [38]
+                0.00    0.00       4/24          b2Shape::~b2Shape() [26]
 -----------------------------------------------
                 0.00    0.00       4/4           cs296::dominos_t::dominos_t() [60]
-[40]     0.0    0.00    0.00       4         b2Body::GetWorldCenter() const [40]
+[39]     0.0    0.00    0.00       4         b2Body::GetWorldCenter() const [39]
 -----------------------------------------------
                 0.00    0.00       4/4           std::fixed(std::ios_base&) [569]
-[41]     0.0    0.00    0.00       4         std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [41]
-                0.00    0.00       4/4           std::operator~(std::_Ios_Fmtflags) [43]
-                0.00    0.00       4/4           std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [42]
-                0.00    0.00       4/8           std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [35]
-                0.00    0.00       4/4           std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [44]
+[40]     0.0    0.00    0.00       4         std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [40]
+                0.00    0.00       4/4           std::operator~(std::_Ios_Fmtflags) [42]
+                0.00    0.00       4/4           std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [41]
+                0.00    0.00       4/8           std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [31]
+                0.00    0.00       4/4           std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [43]
 -----------------------------------------------
-                0.00    0.00       4/4           std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [41]
-[42]     0.0    0.00    0.00       4         std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [42]
-                0.00    0.00       4/8           std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [35]
+                0.00    0.00       4/4           std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [40]
+[41]     0.0    0.00    0.00       4         std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [41]
+                0.00    0.00       4/8           std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [31]
 -----------------------------------------------
-                0.00    0.00       4/4           std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [41]
-[43]     0.0    0.00    0.00       4         std::operator~(std::_Ios_Fmtflags) [43]
+                0.00    0.00       4/4           std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [40]
+[42]     0.0    0.00    0.00       4         std::operator~(std::_Ios_Fmtflags) [42]
 -----------------------------------------------
-                0.00    0.00       4/4           std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [41]
-[44]     0.0    0.00    0.00       4         std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [44]
-                0.00    0.00       4/4           std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [45]
+                0.00    0.00       4/4           std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [40]
+[43]     0.0    0.00    0.00       4         std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [43]
+                0.00    0.00       4/4           std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [44]
 -----------------------------------------------
-                0.00    0.00       4/4           std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [44]
-[45]     0.0    0.00    0.00       4         std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [45]
+                0.00    0.00       4/4           std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags) [43]
+[44]     0.0    0.00    0.00       4         std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags) [44]
+-----------------------------------------------
+                0.00    0.00       3/3           b2Contact::Update(b2ContactListener*) [404]
+[45]     0.0    0.00    0.00       3         b2ContactListener::EndContact(b2Contact*) [45]
 -----------------------------------------------
                 0.00    0.00       3/3           cs296::dominos_t::dominos_t() [60]
 [46]     0.0    0.00    0.00       3         b2RevoluteJointDef::b2RevoluteJointDef() [46]
-                0.00    0.00       6/4679        b2Vec2::b2Vec2() [11]
-                0.00    0.00       6/136         b2Vec2::Set(float, float) [21]
-                0.00    0.00       3/5           b2JointDef::b2JointDef() [37]
+                0.00    0.00       6/4679        b2Vec2::b2Vec2() [9]
+                0.00    0.00       6/136         b2Vec2::Set(float, float) [16]
+                0.00    0.00       3/5           b2JointDef::b2JointDef() [32]
 -----------------------------------------------
                                    1             __static_initialization_and_destruction_0(int, int) [47]
                 0.00    0.00       1/1           __libc_csu_init [576]
 [47]     0.0    0.00    0.00       1+1       __static_initialization_and_destruction_0(int, int) [47]
                 0.00    0.00       1/1           cs296::settings_t::settings_t() [57]
-                0.00    0.00       1/4679        b2Vec2::b2Vec2() [11]
+                0.00    0.00       1/4679        b2Vec2::b2Vec2() [9]
                                    1             __static_initialization_and_destruction_0(int, int) [47]
 -----------------------------------------------
                                    1             __static_initialization_and_destruction_0(int, int) [48]
@@ -300,44 +300,44 @@ index % time    self  children    called     name
 -----------------------------------------------
                 0.00    0.00       1/1           cs296::dominos_t::dominos_t() [60]
 [50]     0.0    0.00    0.00       1         b2EdgeShape::b2EdgeShape() [50]
-                0.00    0.00       4/4679        b2Vec2::b2Vec2() [11]
-                0.00    0.00       1/33          b2Shape::b2Shape() [28]
+                0.00    0.00       4/4679        b2Vec2::b2Vec2() [9]
+                0.00    0.00       1/33          b2Shape::b2Shape() [22]
 -----------------------------------------------
                 0.00    0.00       1/1           cs296::dominos_t::dominos_t() [60]
 [51]     0.0    0.00    0.00       1         b2EdgeShape::~b2EdgeShape() [51]
-                0.00    0.00       1/24          b2Shape::~b2Shape() [31]
+                0.00    0.00       1/24          b2Shape::~b2Shape() [26]
 -----------------------------------------------
                 0.00    0.00       1/1           cs296::base_sim_t::base_sim_t() [56]
 [52]     0.0    0.00    0.00       1         debug_draw_t::debug_draw_t() [52]
 -----------------------------------------------
                 0.00    0.00       1/1           cs296::dominos_t::dominos_t() [60]
 [53]     0.0    0.00    0.00       1         b2PulleyJointDef::b2PulleyJointDef() [53]
-                0.00    0.00       4/4679        b2Vec2::b2Vec2() [11]
-                0.00    0.00       4/136         b2Vec2::Set(float, float) [21]
-                0.00    0.00       1/5           b2JointDef::b2JointDef() [37]
+                0.00    0.00       4/4679        b2Vec2::b2Vec2() [9]
+                0.00    0.00       4/136         b2Vec2::Set(float, float) [16]
+                0.00    0.00       1/5           b2JointDef::b2JointDef() [32]
 -----------------------------------------------
                 0.00    0.00       1/1           cs296::base_sim_t::base_sim_t() [56]
 [54]     0.0    0.00    0.00       1         b2ContactListener::b2ContactListener() [54]
 -----------------------------------------------
                 0.00    0.00       1/1           cs296::dominos_t::dominos_t() [60]
 [55]     0.0    0.00    0.00       1         b2DistanceJointDef::b2DistanceJointDef() [55]
-                0.00    0.00       2/4679        b2Vec2::b2Vec2() [11]
-                0.00    0.00       2/136         b2Vec2::Set(float, float) [21]
-                0.00    0.00       1/5           b2JointDef::b2JointDef() [37]
+                0.00    0.00       2/4679        b2Vec2::b2Vec2() [9]
+                0.00    0.00       2/136         b2Vec2::Set(float, float) [16]
+                0.00    0.00       1/5           b2JointDef::b2JointDef() [32]
 -----------------------------------------------
                 0.00    0.00       1/1           cs296::dominos_t::dominos_t() [60]
 [56]     0.0    0.00    0.00       1         cs296::base_sim_t::base_sim_t() [56]
-                0.00    0.00    2048/2048        cs296::contact_point_t::contact_point_t() [13]
+                0.00    0.00    2048/2048        cs296::contact_point_t::contact_point_t() [12]
                 0.00    0.00       1/1           b2ContactListener::b2ContactListener() [54]
                 0.00    0.00       1/1           b2AABB::b2AABB() [61]
                 0.00    0.00       1/1           debug_draw_t::debug_draw_t() [52]
-                0.00    0.00       1/4679        b2Vec2::b2Vec2() [11]
-                0.00    0.00       1/136         b2Vec2::Set(float, float) [21]
-                0.00    0.00       1/39          b2BodyDef::b2BodyDef() [27]
+                0.00    0.00       1/4679        b2Vec2::b2Vec2() [9]
+                0.00    0.00       1/136         b2Vec2::Set(float, float) [16]
+                0.00    0.00       1/39          b2BodyDef::b2BodyDef() [20]
 -----------------------------------------------
                 0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [47]
 [57]     0.0    0.00    0.00       1         cs296::settings_t::settings_t() [57]
-                0.00    0.00       1/127414      b2Vec2::b2Vec2(float, float) [8]
+                0.00    0.00       1/6384        b2Vec2::b2Vec2(float, float) [8]
 -----------------------------------------------
                 0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [48]
 [58]     0.0    0.00    0.00       1         cs296::sim_t::sim_t(char const*, cs296::base_sim_t* (*)()) [58]
@@ -348,16 +348,16 @@ index % time    self  children    called     name
 -----------------------------------------------
                 0.00    0.00       1/1           cs296::dominos_t::create() [59]
 [60]     0.0    0.00    0.00       1         cs296::dominos_t::dominos_t() [60]
-                0.00    0.00      45/136         b2Vec2::Set(float, float) [21]
-                0.00    0.00      38/39          b2BodyDef::b2BodyDef() [27]
-                0.00    0.00      28/28          b2PolygonShape::b2PolygonShape() [30]
-                0.00    0.00      19/19          b2PolygonShape::~b2PolygonShape() [32]
-                0.00    0.00      16/16          b2FixtureDef::b2FixtureDef() [33]
-                0.00    0.00      13/127414      b2Vec2::b2Vec2(float, float) [8]
-                0.00    0.00       5/4679        b2Vec2::b2Vec2() [11]
-                0.00    0.00       4/4           b2CircleShape::b2CircleShape() [38]
-                0.00    0.00       4/4           b2CircleShape::~b2CircleShape() [39]
-                0.00    0.00       4/4           b2Body::GetWorldCenter() const [40]
+                0.00    0.00      45/136         b2Vec2::Set(float, float) [16]
+                0.00    0.00      38/39          b2BodyDef::b2BodyDef() [20]
+                0.00    0.00      28/28          b2PolygonShape::b2PolygonShape() [24]
+                0.00    0.00      19/19          b2PolygonShape::~b2PolygonShape() [28]
+                0.00    0.00      16/16          b2FixtureDef::b2FixtureDef() [29]
+                0.00    0.00      13/6384        b2Vec2::b2Vec2(float, float) [8]
+                0.00    0.00       5/4679        b2Vec2::b2Vec2() [9]
+                0.00    0.00       4/4           b2CircleShape::b2CircleShape() [37]
+                0.00    0.00       4/4           b2CircleShape::~b2CircleShape() [38]
+                0.00    0.00       4/4           b2Body::GetWorldCenter() const [39]
                 0.00    0.00       3/3           b2RevoluteJointDef::b2RevoluteJointDef() [46]
                 0.00    0.00       1/1           cs296::base_sim_t::base_sim_t() [56]
                 0.00    0.00       1/1           b2EdgeShape::b2EdgeShape() [50]
@@ -367,7 +367,7 @@ index % time    self  children    called     name
 -----------------------------------------------
                 0.00    0.00       1/1           cs296::base_sim_t::base_sim_t() [56]
 [61]     0.0    0.00    0.00       1         b2AABB::b2AABB() [61]
-                0.00    0.00       2/4679        b2Vec2::b2Vec2() [11]
+                0.00    0.00       2/4679        b2Vec2::b2Vec2() [9]
 -----------------------------------------------
                 0.00    0.00       1/1           main [6]
 [62]     0.0    0.00    0.00       1         std::ios_base::precision(int) [62]
@@ -463,22 +463,22 @@ notice and this notice are preserved.
 
 Index by function name
 
-  [47] __static_initialization_and_destruction_0(int, int) (callbacks.cpp) [17] b2ContactListener::PreSolve(b2Contact*, b2Manifold const*) [31] b2Shape::~b2Shape()
-  [48] __static_initialization_and_destruction_0(int, int) (dominos.cpp) [16] b2ContactListener::PostSolve(b2Contact*, b2ContactImpulse const*) [23] b2World::SetSubStepping(bool)
-  [49] __static_initialization_and_destruction_0(int, int) (main.cpp) [54] b2ContactListener::b2ContactListener() [24] b2World::SetWarmStarting(bool)
-  [18] float b2Max<float>(float, float) [55] b2DistanceJointDef::b2DistanceJointDef() [25] b2World::SetContinuousPhysics(bool)
-  [37] b2JointDef::b2JointDef() [46] b2RevoluteJointDef::b2RevoluteJointDef() [34] b2Filter::b2Filter()
-  [50] b2EdgeShape::b2EdgeShape() [22] cs296::base_sim_t::step(cs296::settings_t*) [27] b2BodyDef::b2BodyDef()
-  [51] b2EdgeShape::~b2EdgeShape() [20] cs296::base_sim_t::get_world() [40] b2Body::GetWorldCenter() const
-  [33] b2FixtureDef::b2FixtureDef() [56] cs296::base_sim_t::base_sim_t() [19] b2World::GetProfile() const
-  [14] debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&) [57] cs296::settings_t::settings_t() [41] std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
-  [15] debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&) [13] cs296::contact_point_t::contact_point_t() [62] std::ios_base::precision(int)
-  [12] debug_draw_t::DrawSolidPolygon(b2Vec2 const*, int, b2Color const&) [58] cs296::sim_t::sim_t(char const*, cs296::base_sim_t* (*)()) [42] std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
-  [52] debug_draw_t::debug_draw_t() [59] cs296::dominos_t::create() [35] std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
-  [38] b2CircleShape::b2CircleShape() [60] cs296::dominos_t::dominos_t() [43] std::operator~(std::_Ios_Fmtflags)
-  [39] b2CircleShape::~b2CircleShape() [61] b2AABB::b2AABB() [44] std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
-  [30] b2PolygonShape::b2PolygonShape() [21] b2Vec2::Set(float, float) [45] std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
-  [32] b2PolygonShape::~b2PolygonShape() [29] b2Vec2::SetZero() [9] operator*(float, b2Vec2 const&)
-  [53] b2PulleyJointDef::b2PulleyJointDef() [8] b2Vec2::b2Vec2(float, float) [10] operator+(b2Vec2 const&, b2Vec2 const&)
-  [36] b2ContactListener::EndContact(b2Contact*) [11] b2Vec2::b2Vec2()
-  [26] b2ContactListener::BeginContact(b2Contact*) [28] b2Shape::b2Shape()
+  [47] __static_initialization_and_destruction_0(int, int) (callbacks.cpp) [13] b2ContactListener::PreSolve(b2Contact*, b2Manifold const*) [26] b2Shape::~b2Shape()
+  [48] __static_initialization_and_destruction_0(int, int) (dominos.cpp) [14] b2ContactListener::PostSolve(b2Contact*, b2ContactImpulse const*) [34] b2World::SetSubStepping(bool)
+  [49] __static_initialization_and_destruction_0(int, int) (main.cpp) [54] b2ContactListener::b2ContactListener() [35] b2World::SetWarmStarting(bool)
+  [19] float b2Max<float>(float, float) [55] b2DistanceJointDef::b2DistanceJointDef() [36] b2World::SetContinuousPhysics(bool)
+  [32] b2JointDef::b2JointDef() [46] b2RevoluteJointDef::b2RevoluteJointDef() [30] b2Filter::b2Filter()
+  [50] b2EdgeShape::b2EdgeShape() [33] cs296::base_sim_t::step(cs296::settings_t*) [20] b2BodyDef::b2BodyDef()
+  [51] b2EdgeShape::~b2EdgeShape() [27] cs296::base_sim_t::get_world() [39] b2Body::GetWorldCenter() const
+  [29] b2FixtureDef::b2FixtureDef() [56] cs296::base_sim_t::base_sim_t() [25] b2World::GetProfile() const
+  [17] debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&) [57] cs296::settings_t::settings_t() [40] std::ios_base::setf(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  [18] debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&) [12] cs296::contact_point_t::contact_point_t() [62] std::ios_base::precision(int)
+  [15] debug_draw_t::DrawSolidPolygon(b2Vec2 const*, int, b2Color const&) [58] cs296::sim_t::sim_t(char const*, cs296::base_sim_t* (*)()) [41] std::operator&=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
+  [52] debug_draw_t::debug_draw_t() [59] cs296::dominos_t::create() [31] std::operator&(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  [37] b2CircleShape::b2CircleShape() [60] cs296::dominos_t::dominos_t() [42] std::operator~(std::_Ios_Fmtflags)
+  [38] b2CircleShape::~b2CircleShape() [61] b2AABB::b2AABB() [43] std::operator|=(std::_Ios_Fmtflags&, std::_Ios_Fmtflags)
+  [24] b2PolygonShape::b2PolygonShape() [16] b2Vec2::Set(float, float) [44] std::operator|(std::_Ios_Fmtflags, std::_Ios_Fmtflags)
+  [28] b2PolygonShape::~b2PolygonShape() [23] b2Vec2::SetZero() [10] operator*(float, b2Vec2 const&)
+  [53] b2PulleyJointDef::b2PulleyJointDef() [8] b2Vec2::b2Vec2(float, float) [11] operator+(b2Vec2 const&, b2Vec2 const&)
+  [45] b2ContactListener::EndContact(b2Contact*) [9] b2Vec2::b2Vec2()
+  [21] b2ContactListener::BeginContact(b2Contact*) [22] b2Shape::b2Shape()
