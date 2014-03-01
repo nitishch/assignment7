@@ -55,16 +55,16 @@ OK_FMT="${OK_COLOR}%30s\n${NO_COLOR}"
 ERR_FMT="${ERR_COLOR}%30s\n${NO_COLOR}"
 WARN_FMT="${WARN_COLOR}%30s\n${NO_COLOR}"
 ######################################
+
 SHARED_LIB =TRUE
 ifeq ($(SHARED_LIB) ,FALSE)
 	decider=newtargeta
 else
 	decider=newtargetso
 endif
-
-
+########################################
+WORD=cmake ../
 .PHONY: setup exe exelib doc report data plot
-
 
 exe: setup $(BINDIR)/$(TARGET)
 exelib: setup $(OBJS) $(decider)
@@ -78,6 +78,18 @@ exelib: setup $(OBJS) $(decider)
 #else 
 #	newtargetso 
 #endif
+##################################################################
+###############lab06 additions ####################################
+debug_prof: WORD=cmake -DCMAKE_BUILD_TYPE=Debug ../
+debug_prof: exe
+	@./mybins/cs296_28_exe 100000; \
+	gprof ./mybins/cs296_28_exe > g28_debug_prof.dat
+release_prof: WORD=cmake -DCMAKE_BUILD_TYPE=Release ../
+release_prof: CPPFLAGS+= -O3
+release_prof: exe
+	@./mybins/cs296_28_exe 100000; \
+	gprof ./mybins/cs296_28_exe > g28_release_prof.dat
+#########################################################################
 newtargeta:
 	@cd $(OBJDIR);ar -cq libCS296test.a [!main]*.o;cd ..;mv $(OBJDIR)/libCS296test.a $(PROJECT_ROOT)mylibs/libCS296test.a;
 newtargetso:
@@ -116,7 +128,7 @@ setup:
 	@$(ECHO) $(PROJECT_ROOT)
 	@if [ -f $(PROJECT_ROOT)external/include/Box2D/Box2D.h ] && [ -f $(PROJECT_ROOT)external/lib/Box2D/Box2D.h ];\
 	then $(ECHO) -n "Done...";\
-	else cd $(PROJECT_ROOT)external/src; tar xzf ./Box2D.tgz; cd Box2D; mkdir build296;cd build296; cmake -DCMAKE_BUILD_TYPE=Debug ../;make; make install;\
+	else cd $(PROJECT_ROOT)external/src; tar xzf ./Box2D.tgz; cd Box2D; mkdir build296;cd build296;$(WORD); make; make install;\
 	cd $(PROJECT_ROOT);\
 	fi;
 clean:
@@ -130,7 +142,7 @@ clean:
 distclean: clean
 	@$(RM) -rf $(PROJECT_ROOT)mylibs $(BINDIR) $(DOCDIR)/html cs296_28_exelib $(PROJECT_ROOT)obj $(PROJECT_ROOT)bin $(PROJECT_ROOT)external/include/* $(PROJECT_ROOT)external/lib/* $(PROJECT_ROOT)external/src/Box2D
 	@cd ./doc/;$(RM) -f cs296_report_28.aux cs296_report_28.bbl cs296_report_28.blg cs296_report_28.log cs296_report_28.pdf dubdubexec-eps-converted-to.pdf sqpendulumexe-eps-converted-to.pdf sqpendulumnotexec-eps-converted-to.pdf toppledexec-eps-converted-to.pdf topplingrod-eps-converted-to.pdf dubdubdub-eps-converted-to.pdf
-	
+	@$(RM) -f gmon.out g28_debug_prof.dat g28_release_prof.dat
 doc:
 	@$(ECHO) -n "Generating Doxygen Documentation ...  "
 	@$(RM) -rf doc/html
