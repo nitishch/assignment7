@@ -141,7 +141,7 @@ clean:
 
 distclean: clean
 	@$(RM) -rf $(PROJECT_ROOT)mylibs $(BINDIR) $(DOCDIR)/html cs296_28_exelib $(PROJECT_ROOT)obj $(PROJECT_ROOT)bin $(PROJECT_ROOT)external/include/* $(PROJECT_ROOT)external/lib/* $(PROJECT_ROOT)external/src/Box2D
-	@cd ./doc/;$(RM) -f cs296_report_28.aux cs296_report_28.bbl cs296_report_28.blg cs296_report_28.log cs296_report_28.pdf dubdubexec-eps-converted-to.pdf sqpendulumexe-eps-converted-to.pdf sqpendulumnotexec-eps-converted-to.pdf toppledexec-eps-converted-to.pdf topplingrod-eps-converted-to.pdf dubdubdub-eps-converted-to.pdf
+	@cd ./doc/;$(RM) -f cs296_report_28.aux cs296_report_28.bbl cs296_report_28.blg cs296_report_28.log cs296_report_28.pdf dubdubexec-eps-converted-to.pdf sqpendulumexe-eps-converted-to.pdf sqpendulumnotexec-eps-converted-to.pdf toppledexec-eps-converted-to.pdf topplingrod-eps-converted-to.pdf dubdubdub-eps-converted-to.pdf g28_prof_report.aux g28_prof_report.log g28_prof_report.pdf
 	@$(RM) -f gmon.out g28_debug_prof.dat g28_release_prof.dat
 doc:
 	@$(ECHO) -n "Generating Doxygen Documentation ...  "
@@ -154,7 +154,9 @@ report:
 	pdflatex cs296_report_28;\
 	bibtex cs296_report_28;\
 	pdflatex cs296_report_28;\
-	bibtex cs296_report_28;
+	bibtex cs296_report_28;\
+	pdflatex g28_prof_report.tex;\
+	pdflatex g28_prof_report.tex
 data: exe
 	@cd scripts;\
 	./g28_gen_data.sh;\
