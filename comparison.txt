@@ -1,0 +1,95 @@
+b2ContactSolver::SolveVelocityConstraints()   0.77   0.87
+debug_draw_t::DrawSolidCircle(b2Vec2 const&, float, b2Vec2 const&, b2Color const&)   0.38   0.25
+b2ContactSolver::SolvePositionConstraints()   0.14   0.09
+b2ContactSolver::InitializeVelocityConstraints()   0.11   0.11
+b2ContactSolver::b2ContactSolver(b2ContactSolverDef*)   0.09   0.11
+b2WorldManifold::Initialize(b2Manifold const*, b2Transform const&, float, b2Transform const&, float)   0.08   0.02
+b2CollidePolygonAndCircle(b2Manifold*, b2PolygonShape const*, b2Transform const&, b2CircleShape const*, b2Transform const&)   0.06   0.02
+b2ContactManager::Collide()   0.06   0.10
+b2World::Solve(b2TimeStep const&)   0.06   0.20
+b2World::DrawShape(b2Fixture*, b2Transform const&, b2Color const&)   0.06   0.08
+b2World::DrawDebugData()   0.05   0.08
+b2World::SolveTOI(b2TimeStep const&)   0.05   0.14
+b2DynamicTree::MoveProxy(int, b2AABB const&, b2Vec2 const&)   0.03   0.01
+b2PulleyJoint::SolveVelocityConstraints(b2SolverData const&)   0.03   0.07
+b2ContactSolver::WarmStart()   0.03   0.09
+b2Contact::Update(b2ContactListener*)   0.03   0.07
+b2CollideCircles(b2Manifold*, b2CircleShape const*, b2Transform const&, b2CircleShape const*, b2Transform const&)   0.02   
+b2CollideEdgeAndPolygon(b2Manifold*, b2EdgeShape const*, b2Transform const&, b2PolygonShape const*, b2Transform const&)   0.02   
+b2PulleyJoint::SolvePositionConstraints(b2SolverData const&)   0.02   0.02
+b2ContactSolver::StoreImpulses()   0.02   0.01
+b2RevoluteJoint::SolveVelocityConstraints(b2SolverData const&)   0.02   0.09
+b2StackAllocator::Free(void*)   0.02   0.04
+b2Island::Solve(b2Profile*, b2TimeStep const&, b2Vec2 const&, bool)   0.02   0.37
+b2CircleShape::ComputeAABB(b2AABB*, b2Transform const&, int) const   0.02   0.01
+void b2DynamicTree::Query<b2BroadPhase>(b2BroadPhase*, b2AABB const&) const   0.02   0.05
+debug_draw_t::DrawSolidPolygon(b2Vec2 const*, int, b2Color const&)   0.01   0.07
+debug_draw_t::DrawSegment(b2Vec2 const&, b2Vec2 const&, b2Color const&)   0.01   0.01
+b2PulleyJoint::InitVelocityConstraints(b2SolverData const&)   0.01   0.01
+b2CircleContact::Evaluate(b2Manifold*, b2Transform const&, b2Transform const&)   0.01   
+b2DistanceJoint::SolvePositionConstraints(b2SolverData const&)   0.01   
+b2StackAllocator::Allocate(int)   0.01   0.07
+b2Body::SynchronizeFixtures()   0.01   0.01
+b2Timer::Reset()   0.01   0.07
+b2Simplex::Solve3()   0.01   
+b2PolygonShape::ComputeAABB(b2AABB*, b2Transform const&, int) const   0.01   0.10
+b2Mat33::Solve22(b2Vec2 const&) const   0.01   0.04
+b2ContactListener::PostSolve(b2Contact*, b2ContactImpulse const*)   0.00   0.01
+b2ContactListener::PreSolve(b2Contact*, b2Manifold const*)   0.00   0.00
+b2ContactListener::BeginContact(b2Contact*)   0.00   0.00
+b2ContactListener::EndContact(b2Contact*)   0.00   0.00
+_init   0.00   0.01 0.00 0.00
+cs296::base_sim_t::base_sim_t()   0.00   0.00
+cs296::dominos_t::dominos_t()   0.00   0.00
+main   0.00   
+      
+the percentage of the total running time of the      
+      
+      
+cumulative a running sum of the number of seconds accounted      
+      
+      
+self the number of seconds accounted for by this      
+      
+      
+      
+calls the number of times this function was invoked, if      
+      
+      
+self the average number of milliseconds spent in this      
+      
+      
+      
+total the average number of milliseconds spent in this      
+      
+      
+      
+      
+      
+      
+in parenthesis it shows where it would appear in      
+      
+      
+      
+      
+opying and distribution of this file, with or without modification,      
+are permitted in any medium without royalty provided the copyright      
+      
+      
+all graph (explanation follows)      
+      
+      
+      
+      
+      
+spontaneous>      
+      
+      
+spontaneous>      
+      
+      
+      
+      
+      
+      
+      

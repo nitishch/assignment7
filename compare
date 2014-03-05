@@ -1,0 +1,17 @@
+#!/bin/bash
+i=6
+touch comparison.txt
+while [ $i -le 100 ]
+do
+presentstring=$(sed -n "${i}s/^[^a-z_]*\([a-zA-Z0-9_():&,* <>]*\)$/\1/p" rp.dat)
+#echo "hgr"
+echo -n $presentstring >> comparison.txt
+echo -n "   " >> comparison.txt
+presentstring=$(echo $presentstring | sed 's/\([*&]\)/\\\1/g')
+releaseno=$(sed -n "/${presentstring}/s/.\{21\}\(....\).*$/\1/p" rp.dat | sed -n '/\./p')
+debugno=$(sed -n "/${presentstring}/s/.\{21\}\(....\).*$/\1/p" dp.dat | sed -n '/\./p')
+echo -n $releaseno >> comparison.txt
+echo -n "   " >> comparison.txt
+echo $debugno >> comparison.txt
+i=$[ $i+1 ]
+done
